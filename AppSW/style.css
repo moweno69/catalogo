@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#principal {
+    /*background: #496596;*/
+    background-image: url(imagenes/GDL\ Exterior\ 2014\ H-02.jpg);
+    background-size: 100%;
+}
+
+#fondo_data{
+    background-image: url(imagenes/MEX\ Exterior\ 2014\ H-05.jpg);
+    background-size: 100%;
+}
+
+#fondo_segu{
+    background-image: url(imagenes/GDL\ Oficinas\ 2014\ H-01.jpg);
+    background-size: 100%;
+}
+
+#fondo_auto{
+    background-image: url(imagenes/GDL\ Exterior\ 2014\ H-12.jpg);
+    background-size: 100%;
+    /*background-repeat: no-repeat ;*/
+    /*background-attachment: fixed ;*/
+}
+
+.navegacion{
+    width: 1000px;
+    margin: 30px auto;
+    background-color: aliceblue;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;/**/
+    display: inline-block
+}
+
+.menu >li >a{
+    display: block;
+    padding: 15px 20px;
+    color: #353535;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+    color: #ce7d35;
+    transition: all .3s;
+}
+
+.submenu{
+    position: absolute;
+    background: #333333;
+    width: 110%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Aquí empieza la tabla */
+
+#tabla{
+    width: 1000px;
+    margin: 40px auto;
+}
+
+table{
+    background-color: azure;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-family: sans-serif;
+    border-radius: 10px;
+    
+
+}
+
+th, td{
+    border: solid 1px gray;
+    padding: 25px;
+    word-wrap:  break-word;
+    
+}
+
+thead{
+    background-color: #5DADE2 ;
+    border-bottom: solid 2px #333333;
+}
+
+h1{
+    
+    color:white;
+    font-size: 40px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: rgba(123, 98, 0, 0.5);
+    text-align: center;
+
+}
+
+/* el menú de imagenes*/
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+.container .card{
+    width: 330px;
+    height: 380px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: azure;
+
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    
+    
+    
+}
+
+.container .card:hover{
+    transform: translate(-15px);
+    box-shadow: 0 16px 16px rgba(0, 0, 0, .7);
+}
+
+.container .card img{
+    width:330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color:#3498db;
+}
+
+/* El botón de inicio */
+
+.boton {
+    display: inline-flex ;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 100px;
+    height: 40px;
+    background-color: azure;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: gray;
+}
+
+.botones{
+    text-align: center;
+    text-decoration: none;
+}
+
+.dimension{
+    width: 1000px;
+    height: 3000px;
+}
